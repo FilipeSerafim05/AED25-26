@@ -20,14 +20,16 @@ Key features:
 
 1. **Map file (`.map`)**  
    The **first line** contains:
-    numberOfCities numberOfConnections |
+    numberOfCities numberOfConnections
+   
    Each subsequent line describes a connection:
     origin destination transport duration cost firstDeparture lastDeparture departurePeriodicity
 
 
-2. **Clients file (`.cli`)**  
+3. **Clients file (`.cli`)**  
    The **first line** contains:
-    numberOfClients |
+    numberOfClients
+   
    Each subsequent line describes a client:
     clientID startingCity endingCity departureTime filter numRestrictions [restrictions]
    - `filter` can be `cost` or `duration`.  

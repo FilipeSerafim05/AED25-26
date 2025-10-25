@@ -87,7 +87,7 @@ The results will be written to a `.sol` file with the same name as the `.cli` in
 ### Output file (`example.sol`)
 
 1 1 plane 3 90 50 <br>
-2 2 3 train 1 bus 1 80 30 <br>
+2 2 train 3 bus 1 80 30 <br>
 
 - Each line shows:
   - `clientID startingCity <transport city ...> endingCity duration cost`

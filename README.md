@@ -19,17 +19,15 @@ Key features:
 ## Input Files
 
 1. **Map file (`.map`)**  
-   The **first line** contains:
-    numberOfCities numberOfConnections
-   
+   The **first line** contains: <br>
+    numberOfCities numberOfConnections <br>
    Each subsequent line describes a connection:
     origin destination transport duration cost firstDeparture lastDeparture departurePeriodicity
 
 
 3. **Clients file (`.cli`)**  
-   The **first line** contains:
-    numberOfClients
-   
+   The **first line** contains: <br>
+    numberOfClients <br>
    Each subsequent line describes a client:
     clientID startingCity endingCity departureTime filter numRestrictions [restrictions]
    - `filter` can be `cost` or `duration`.  
@@ -61,10 +59,10 @@ The results will be written to a `.sol` file with the same name as the `.cli` in
 
 ### Map file (`example.map`)
 
-3 3
-1 2 bus 60 10 480 1020 60
-2 3 train 120 20 540 1140 120
-1 3 plane 90 50 600 1200 180
+3 3 <br>
+1 2 bus 60 10 480 1020 60 <br>
+2 3 train 120 20 540 1140 120 <br>
+1 3 plane 90 50 600 1200 180 <br>
 
 - The first line `3 3` means **3 cities** and **3 connections**.
 - Each subsequent line describes a connection:
@@ -74,9 +72,9 @@ The results will be written to a `.sol` file with the same name as the `.cli` in
 
 ### Clients file (`example.cli`)
 
-2
-1 1 3 500 duration 1 A2 100
-2 2 1 600 cost 0
+2 <br>
+1 1 3 500 duration 1 A2 100 <br>
+2 2 1 600 cost 0 <br>
 
 - The first line `2` means there are **2 clients**.
 - Each subsequent line describes a client request:
@@ -88,8 +86,8 @@ The results will be written to a `.sol` file with the same name as the `.cli` in
 
 ### Output file (`example.sol`)
 
-1 1 plane 3 90 50
-2 2 3 train 1 bus 1 80 30
+1 1 plane 3 90 50 <br>
+2 2 3 train 1 bus 1 80 30 <br>
 
 - Each line shows:
   - `clientID startingCity <transport city ...> endingCity duration cost`

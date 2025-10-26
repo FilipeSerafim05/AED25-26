@@ -25,7 +25,7 @@ Key features:
     origin destination transport duration cost firstDeparture lastDeparture departurePeriodicity
 
 
-3. **Clients file (`.cli`)**  
+2. **Clients file (`.cli`)**  
    The **first line** contains: <br>
     numberOfClients <br>
    Each subsequent line describes a client:
